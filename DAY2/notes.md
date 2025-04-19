@@ -7,9 +7,11 @@ ANS: tomcat port number is 8080 and Jenkins port number also 8080 --> Then we ar
 
 step 1: goto conf directory.
 
-    cd /opt/apache-tomcat-9.0.104/conf
+    # cd /opt/apache-tomcat-9.0.104/conf
 
 step 2: open server.xml
+
+       # vi server.xml
    
     goto line number 71 and change the port.
 
@@ -39,9 +41,9 @@ step 1:
 copy war file into your local[Downloads]
 ----------------------------------------
 
-cp target/maven-web-application.war /tmp/
+# cp target/maven-web-application.war /tmp/
 
-scp -i ~/Downloads/b4devopshyd.pem ec2-user@18.61.75.128:/tmp/maven-web-application.war  /c/Users/gpras/Downloads/maven-web-application.war
+# scp -i ~/Downloads/b4devopshyd.pem ec2-user@18.61.75.128:/tmp/maven-web-application.war  /c/Users/gpras/Downloads/maven-web-application.war
 
 step 2: Access that web application from browser.
 ------
@@ -67,12 +69,15 @@ stpe 1: check where that service is running or not
 
 user name:apache  
 
-service httpd.service status
+# service httpd.service status
 
 
-step 2: yum install httpd -y
+step 2: 
+# yum install httpd -y
+
 step 3: start the server
-    service httpd start
+
+    # service httpd start
 
 NOTE: default port : 80
 
@@ -87,4 +92,4 @@ step 5:
 what is the default path? /var/www/html 
 
 
-/etc/httpd/conf
+# cd /etc/httpd/conf
