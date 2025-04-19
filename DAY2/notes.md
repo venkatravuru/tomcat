@@ -19,7 +19,7 @@ step 3: stop the tomcat server and start the tomcat server.
 
 step 4: now try to access with different port number.
 
-http://<IP>:<NEW-PORT-NO>
+# http://<IP>:<NEW-PORT-NO>
 
 
 NOTE: please make sure to enable the port in Security groups.
@@ -48,7 +48,7 @@ copy war file into your local[Downloads]
 step 2: Access that web application from browser.
 ------
 
-http://13.233.32.177:9090/maven-web-application
+# http://13.233.32.177:9090/maven-web-application
 
 
 
@@ -81,7 +81,7 @@ step 3: start the server
 
 NOTE: default port : 80
 
-http://65.0.182.70
+# http://65.0.182.70
 
 step 4: make to sure to enable inbould rules for port 80
 
