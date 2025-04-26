@@ -262,6 +262,7 @@ step 6: refresh the main page ----> It will ask the credentials.
 step 7: cd /opt/apache-tomcat-9.0.104/conf/ 
 
 step 8: vi tomcat-users.xml ---> goto end of the file and add users.
+Add line no 42 past
 
   <user username="kk" password="kkfunda123" roles="manager-gui,admin-gui"/>
   <user username="mahesh" password="mahesh" roles="manager-gui,admin-gui"/>
